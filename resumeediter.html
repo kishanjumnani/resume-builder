@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container-editer flex space-between m-[2rem] gap-[4rem]">
+            <div class="dataentry w-[40vw] p-[3rem]">
+                <div class="contentform">
+
+                  
+                    <section class="text-gray-600 body-font relative personaldetail border-[2px]">
+                        <div class="container py-[3rem]">
+                          <div class="flex flex-col text-center w-full mb-6">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Person details</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Get started with the basics: your name and contact information..</p>
+                          </div>
+                          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div class="flex flex-wrap -m-2">
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="frstName" class="leading-7 text-sm text-gray-600">First Name</label>
+                                  <input type="text" id="frstName" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="lastName" class="leading-7 text-sm text-gray-600">Last Name</label>
+                                  <input type="lastName" id="lastName" name="lastName" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              <div class="p-2 w-full">
+                              <div class="relative">
+                                <label for="jobtitleinp" class="leading-7 text-sm text-gray-600">Job Tittle</label>
+                                <input type="text" id="jobtitleinp" name="jobtitleinp" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="address1" class="leading-7 text-sm text-gray-600">Address1</label>
+                                <input type="text" id="address1" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="address" class="leading-7 text-sm text-gray-600">Address2</label>
+                                <input type="text" id="Address2" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="mblinp" class="leading-7 text-sm text-gray-600">Mobile</label>
+                                <input type="number" id="mblinp" name="mblinp" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <!-- <div class="crrntlybttn">
+                                <button type="menu">Currently Employed</button>
+                            </div> -->
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="emlinp" class="leading-7 text-sm text-gray-600">Email</label>
+                                  <input type="email" id="emlinp" name="emlinp" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="social_links flex flex-wrap p-[1rem]">
+                            <div class="addlinksdiv">
+                                <button type="button" class="px-[1rem]" id="btnsl"><i class="fa-solid fa-plus text-blue-400"></i></button>
+                            </div>
+                            <p class="text-blue-400"> Add Social links</p>
+
+                             
+                             <div class="addlinks flex flex-wrap -m-2"></div>
+                      </section>
+                    <section class="text-gray-600 body-font relative wrkexp">
+                        <div class="container py-[3rem]">
+                          <div class="flex flex-col text-center w-full mb-12">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Professional Experience</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Tell us about your most recent job..</p>
+                          </div>
+                          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div class="flex flex-wrap -m-2" id="wrkexpmaindiv">
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="name" class="leading-7 text-sm text-gray-600">Position Title</label>
+                                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="email" class="leading-7 text-sm text-gray-600">Company Name</label>
+                                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">City</label>
+                                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">State</label>
+                                <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Start Date</label>
+                                <input type="date" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">End Date</label>
+                                <input type="date" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <!-- <div class="crrntlybttn">
+                                <button type="menu">Currently Employed</button>
+                            </div>  -->
+                              <div class="p-2 w-full">
+                                <div class="relative">
+                                  <label for="message" class="leading-7 text-sm text-gray-600">Work Summary</label>
+                                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" placeholder="Work Summary"></textarea>
+                                </div>
+                              </div>
+                              <div class="bttnsincdec flex space-between">
+                               <div class="p-2">
+                                <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg" id="incrdivbttnwrk">+Button</button>
+                              </div>
+                               <div class="p-2">
+                                <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg" id="decrdivbttnwrk">-Button</button>
+                              </div>
+                              </div>
+                          
+                               
+                    
+                              </div>
+                            </div>
+                          </div>
+                       
+                        <!-- <div class="wrkincdecrbttns flex space-between gap-[1rem]">
+                            <button type="submit" class="px-[30px] py-[30px] bg-green-500" id="icrbbtnwrk">+</button>
+                            <button type="submit" class="px-[30px] py-[30px] bg-green-500">-</button>
+                        </div> -->
+                      </section> 
+                      <!-- <section class="text-gray-600 body-font relative edcation">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="flex flex-col text-center w-full mb-12">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Education</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Add your most relevant education, including programs you're currently enrolled in..</p>
+                          </div>
+                          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div class="flex flex-wrap -m-2">
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="name" class="leading-7 text-sm text-gray-600">School Name</label>
+                                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              <div class="p-2 w-1/2">
+                                <div class="relative">
+                                  <label for="email" class="leading-7 text-sm text-gray-600">School Location</label>
+                                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                              </div>
+                              <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">Degree</label>
+                                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Field of Study</label>
+                                <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Start Date</label>
+                                <input type="date" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                              <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">End Date</label>
+                                <input type="date" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                              </div>
+                            </div>
+                           
+                              <div class="p-2 w-full">
+                                <div class="relative">
+                                  <label for="message" class="leading-7 text-sm text-gray-600">Description</label>
+                                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" placeholder="Work Summary"></textarea>
+                                </div>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        </div>
+                      </section> -->
+                      <!-- <section class="text-gray-600 body-font relative prjct">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="flex flex-col text-center w-full mb-12">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Project</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Add relevant professional key skills and proficiencies</p>
+                          </div>
+                          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div class="flex flex-wrap -m-2">
+                               <div class="p-2 w-full">
+                                    <div class="relative">
+                                      <label for="name" class="leading-7 text-sm text-gray-600">Project Name</label>
+                                      <input type="text" id="" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out prjctsinpname">
+                                    </div>
+                                  </div> -->
+                                
+                              <!-- <div class="p-2 w-full">
+                                <div class="relative">
+                                  <label for="name" class="leading-7 text-sm text-gray-600">Project Detail</label>
+                                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" placeholder="Work Summary"></textarea>
+                                </div>
+                              </div> -->
+                              <!-- <div class="p-2 w-full">
+
+                                <div class="relative">
+                                  <label for="name" class="leading-7 text-sm text-gray-600">Project Name</label>
+                                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out prjctsinpname">
+                                </div>
+                              </div> -->
+                          <!-- <div class="p-2 w-full">
+                            <div class="relative">
+                              <label for="name" class="leading-7 text-sm text-gray-600">Project Detail</label>
+                              <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" placeholder="Work Summary"></textarea>
+                            </div>
+                          </div> -->
+                          <!-- <div class="addbtbs prjct">
+                            <button type="submit bg-green-400" id="adddivprjct">+addpjct</button>
+
+                          </div>
+                          <div id="projecttext">
+
+                          </div>
+                              </div>
+                              </div>
+                        </div>
+                        </section> 
+                        <section class="text-gray-600 body-font relative Skill">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="flex flex-col text-center w-full mb-12">
+                                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Skill</h1>
+                                
+                               
+                              </div>
+                              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                                <div class="flex flex-wrap -m-2">
+                                  <div class="p-2 w-1/2">
+                                    <div class="relative inpskills">
+                                      <label for="name" class="leading-7 text-sm text-gray-600">Skill</label>
+                                      <button type="submit" class="bg-green-500 px-[100px] py-[20px]" id="skklbtn">Add Skills</button>
+                                      <div id="inputdiv"></div>
+                                       <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"> -->
+                                    <!-- </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                            </div>
+                            </section> -->
+                        <section class="text-gray-600 body-font relative activ">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="flex flex-col text-center w-full mb-12">
+                                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Add Additional Section</h1>
+                               
+                              </div>
+                              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                                <div class="flex flex-wrap -m-2">
+                                  <div class="p-2 w-1/2">
+                                    <div class="relative">
+                                      <!-- <label for="name" class="leading-7 text-sm text-gray-600">A</label>
+                                      <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"> -->
+                                    <div class="addxtra">
+                                      <button type="submit"  id="addxtrabbtn"><i class="fa-solid fa-plus"></i></button>
+                                      <span>Add</span>
+                                      <div id="inputxtra"></div>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                            </div>
+                            </section>
+                </div>
+            </div>
+            <div class="priviewdata border-[2px] h-[80vh] w-[50vw] py-[3rem]">
+                <div class="conatiner_shwtemplate">
+                    <h1><span id="name1">kishan</span><span id="name2">&nbsp;jumnani</span></h1>
+                    <p id="jobtittle">Software Developer, Student at Geekster</p>
+                    <a href="www.linkedin.com/in/
+                    kishanjumnani27" target="_blank">Linkedin</a>
+                    <a href="https://github.com/kishjumn27" target="_blank">Github</a>
+                    <hr>
+
+                    <h2>Experience</h2>
+                
+                    <h3 id="wrkexpns">Software Developer at Amazon</h3>
+                    <p id="dtlwrk">I work with amazon in transportation team, some more description Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus, ullam! Maxime officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae
+                        totam id commodi laborum enim, sint ea odit quasi soluta!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto ut praesentium modi. Incidunt atque
+                        voluptatem, dignissimos officiis reprehenderit est!</p>
+                    <hr>
+                
+                    <h3>Student at Geekster</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci nesciunt nostrum voluptate vero fugiat odio,
+                        quaerat non id sequi repudiandae quis, ullam quia similique iusto maxime et blanditiis aspernatur. Rem ullam
+                        nisi nostrum consequatur voluptatem voluptates libero, blanditiis suscipit aliquam quia voluptatum incidunt iste
+                        adipisci dolores quae ea! Dignissimos consequuntur excepturi eaque, obcaecati rerum repellat labore illo
+                        voluptates iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum similique soluta eius
+                        quidem commodi, beatae at, quasi minima dolore quisquam illum animi nostrum ut voluptatibus culpa velit eos
+                        ratione odio repudiandae est ipsa impedit.
+                    </p>
+                    <hr>
+                    <h2 id="" class="clistskill">
+                        Skills
+                    </h2>
+                    <ul id="skillShow" class="clistskill">
+                        <!-- <li id="shwskkls">Java</li> -->
+                        <!-- <li>JavaScript</li>
+                        <li>Testing</li>
+                        <li>API Designing</li>
+                        <li>System Design</li> -->
+                
+                    </ul>
+                    <hr>
+                    <h2>Hobbies</h2>
+                    <ul id="shwxtas" class="">
+
+                    </ul>
+                        
+  
+                    <hr>
+                    <h2>Projects</h2>
+                    <dl id="showproject">
+                        <dt>Project-1</dt>
+                        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas recusandae nihil eum quos quia, aliquam
+                            necessitatibus sit doloremque vero molestias ad nam quod natus voluptatum eos possimus a veniam sequi!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quas architecto tempora voluptatibus
+                            voluptates. Fugiat, eum dolores excepturi, illo, alias ullam iusto at nesciunt doloribus tempora
+                            exercitationem soluta laudantium praesentium!
+                
+                        </dd>
+                        <dt>Project-2</dt>
+                        <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore illo molestiae sapiente dicta alias vel
+                            natus fuga pariatur facere. Facilis sunt ipsam impedit accusantium quo earum commodi dolore alias
+                            repudiandae consectetur beatae voluptates reprehenderit expedita accusamus fugit, totam iste ad
+                            exercitationem. Temporibus, ducimus, culpa aliquid tempore perspiciatis quos impedit accusantium sint magni
+                            mollitia deserunt id nemo eum, amet aspernatur deleniti.</dd>
+                    </dl>
+                    <hr>
+                
+                    <pre>
+                          Contact Details
+                          Email:<span id="emal">abc@gmail.com</span>
+                          Mobile no.<span id="mobnmbr">9817xxxx52</span>
+                </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

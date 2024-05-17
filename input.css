@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .perfomance-item1 ::after .perfomance-item2 {
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+} */
